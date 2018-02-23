@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></meta>
+<body>
+	<form action="#" th:action="@{sauvegardePerso}"
+		th:object="${Personnage}" method="post">
+		<section>
+			<div class="presentation">
+				<div class="données_texte">
+					<p>Nom du personnage</p>
+					<input type="text" name="nom" placeholder="Nom" required="true" />
+					<p>Description du personnage</p>
+					<textarea type="password" name="description" placeholder="password"
+						required="true"></textarea>
+				</div>
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<p class="vie">vie:</p> <input class="vie" name="vie"
+								type="number" required="true" placeholder="10" />
+							</td>
+							<td>
+								<p class="vie">psy:</p> <input class="vie" name="psy"
+								type="number" required="true" placeholder="10" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<section>
+			<table class="tableau">
+				<tbody>
+					<tr>
+						<th class="caracPrinc">Physique</th>
+						<th class="caracPrinc">Social</th>
+						<th class="caracPrinc">Mental</th>
+					</tr>
+					<tr>
+						<td class="caracPrinc"><input name="physique" type="number"
+							required="true" placeholder="50" />
+						<p>%</p></td>
+						<td class="caracPrinc"><input name="social" type="number"
+							required="true" placeholder="50" />
+						<p>%</p></td>
+						<td class="caracPrinc"><input name="mental" type="number"
+							required="true" placeholder="50" />
+						<p>%</p></td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="tableau">
+				<tbody>
+					<tr>
+						<th class="caracSecond">force</th>
+						<th class="caracSecond">agilité</th>
+						<th class="caracSecond">endurance</th>
+						<th class="caracSecond">charisme</th>
+						<th class="caracSecond">apparence</th>
+						<th class="caracSecond">truc</th>
+						<th class="caracSecond">intelligence</th>
+						<th class="caracSecond">volonté</th>
+						<th class="caracSecond">sagesse</th>
+					</tr>
+					<tr>
+						<td class="caracSecond"><input name="force" type="number"
+							required="true" placeholder="50" /></td>
+						<td class="caracSecond"><input name="agilite" type="number"
+							required="true" placeholder="50" /></td>
+						<td class="caracSecond"><input name="endurance" type="number"
+							required="true" placeholder="50" /></td>
+						<td class="caracSecond"><input name="charisme" type="number"
+							required="true" placeholder="50" /></td>
+						<td class="caracSecond"><input name="apparence" type="number"
+							required="true" placeholder="50" /></td>
+						<td class="caracSecond"><input name="truc" type="number"
+							required="true" placeholder="50" /></td>
+						<td class="caracSecond"><input name="intelligence"
+							type="number" required="true" placeholder="50" /></td>
+						<td class="caracSecond"><input name="volonte" type="number"
+							required="true" placeholder="50" /></td>
+						<td class="caracSecond"><input name="sagesse" type="number"
+							required="true" placeholder="50" /></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<div class="infoMineure">
+			<h4 class="text">Langues connues:</h4>
+			<input name="langue" type="text" required="true" placeholder="commun" />
+			<h4 class="text">Posture de base:</h4>
+			<p>Défensive</p>
+		</div>
+		<h2>Compétences:</h2>
+		<ul>
+			<li>Herboristerie 20%</li>
+			<li>Survie 15%</li>
+			<li>Cuisine 15%</li>
+			<li>Bâton 10%</li>
+		</ul>
+		<h2>Dons:</h2>
+		<ul>
+			<li>Métamorphose: Tranformation en ours</li>
+			<li>Luciole: Un essaim de luciole entoure la cible. Elle ne peut
+				pas devenir invisible et elle a un malus de -5 a distance: 1psy</li>
+			<li>Toucher guérisseur: Touche la cible et la soigne de 1d6 pv:
+				2psy</li>
+			<li>Marque du fauve: Bonus de 10% au physque de la cible et
+				armure naturelle +1: 3psy</li>
+		</ul>
+		<h2>Equipement:</h2>
+		<ul>
+			<li>armure en cuir lourd: armure+2</li>
+			<li>Bâton: 1d6</li>
+		</ul>
+		<input th:type="submit" value="OK" />
+
+	</form>
+</body>
+</html>

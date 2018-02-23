@@ -1,0 +1,11 @@
+/*C11*/SET SCHEMA PUBLIC
+alter table personnage_competences drop constraint UK_aeatw1411apo1v6rlyc5thxsb
+alter table personnage_competences add constraint UK_aeatw1411apo1v6rlyc5thxsb unique (competences_id)
+alter table personnage_dons drop constraint UK_n9v2d1pq6f2efss8f96oqbqn8
+alter table personnage_dons add constraint UK_n9v2d1pq6f2efss8f96oqbqn8 unique (dons_id)
+alter table personnage_equipement drop constraint UK_g4y048xhrvc0bw66vjrbh3rcn
+alter table personnage_equipement add constraint UK_g4y048xhrvc0bw66vjrbh3rcn unique (equipement_id)
+alter table personnage_stat_primaire drop constraint UK_a97bkwasgs6q4est0sps4k8pg
+alter table personnage_stat_primaire add constraint UK_a97bkwasgs6q4est0sps4k8pg unique (stat_primaire_id)
+alter table personnage_stat_secondaire drop constraint UK_hslq1yt7oiv45nrucx75r0y5o
+alter table personnage_stat_secondaire add constraint UK_hslq1yt7oiv45nrucx75r0y5o unique (stat_secondaire_id)

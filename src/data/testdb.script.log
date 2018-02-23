@@ -1,0 +1,142 @@
+/*C21*/SET SCHEMA PUBLIC
+alter table personnage_competences drop constraint UK_aeatw1411apo1v6rlyc5thxsb
+alter table personnage_competences add constraint UK_aeatw1411apo1v6rlyc5thxsb unique (competences_id)
+alter table personnage_dons drop constraint UK_n9v2d1pq6f2efss8f96oqbqn8
+alter table personnage_dons add constraint UK_n9v2d1pq6f2efss8f96oqbqn8 unique (dons_id)
+alter table personnage_equipement drop constraint UK_g4y048xhrvc0bw66vjrbh3rcn
+alter table personnage_equipement add constraint UK_g4y048xhrvc0bw66vjrbh3rcn unique (equipement_id)
+alter table personnage_stat_primaire drop constraint UK_a97bkwasgs6q4est0sps4k8pg
+alter table personnage_stat_primaire add constraint UK_a97bkwasgs6q4est0sps4k8pg unique (stat_primaire_id)
+alter table personnage_stat_secondaire drop constraint UK_hslq1yt7oiv45nrucx75r0y5o
+alter table personnage_stat_secondaire add constraint UK_hslq1yt7oiv45nrucx75r0y5o unique (stat_secondaire_id)
+/*C22*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C21*/DISCONNECT
+/*C20*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C19*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C18*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C17*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C16*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C15*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C14*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C13*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C31*/SET SCHEMA PUBLIC
+alter table personnage_competences drop constraint UK_aeatw1411apo1v6rlyc5thxsb
+alter table personnage_competences add constraint UK_aeatw1411apo1v6rlyc5thxsb unique (competences_id)
+alter table personnage_dons drop constraint UK_n9v2d1pq6f2efss8f96oqbqn8
+alter table personnage_dons add constraint UK_n9v2d1pq6f2efss8f96oqbqn8 unique (dons_id)
+alter table personnage_equipement drop constraint UK_g4y048xhrvc0bw66vjrbh3rcn
+alter table personnage_equipement add constraint UK_g4y048xhrvc0bw66vjrbh3rcn unique (equipement_id)
+alter table personnage_stat_primaire drop constraint UK_a97bkwasgs6q4est0sps4k8pg
+alter table personnage_stat_primaire add constraint UK_a97bkwasgs6q4est0sps4k8pg unique (stat_primaire_id)
+alter table personnage_stat_secondaire drop constraint UK_hslq1yt7oiv45nrucx75r0y5o
+alter table personnage_stat_secondaire add constraint UK_hslq1yt7oiv45nrucx75r0y5o unique (stat_secondaire_id)
+/*C32*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C31*/DISCONNECT
+/*C30*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C29*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C28*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C27*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C26*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C25*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C24*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C23*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C41*/SET SCHEMA PUBLIC
+alter table personnage_competences drop constraint UK_aeatw1411apo1v6rlyc5thxsb
+alter table personnage_competences add constraint UK_aeatw1411apo1v6rlyc5thxsb unique (competences_id)
+alter table personnage_dons drop constraint UK_n9v2d1pq6f2efss8f96oqbqn8
+alter table personnage_dons add constraint UK_n9v2d1pq6f2efss8f96oqbqn8 unique (dons_id)
+alter table personnage_equipement drop constraint UK_g4y048xhrvc0bw66vjrbh3rcn
+alter table personnage_equipement add constraint UK_g4y048xhrvc0bw66vjrbh3rcn unique (equipement_id)
+alter table personnage_stat_primaire drop constraint UK_a97bkwasgs6q4est0sps4k8pg
+alter table personnage_stat_primaire add constraint UK_a97bkwasgs6q4est0sps4k8pg unique (stat_primaire_id)
+alter table personnage_stat_secondaire drop constraint UK_hslq1yt7oiv45nrucx75r0y5o
+alter table personnage_stat_secondaire add constraint UK_hslq1yt7oiv45nrucx75r0y5o unique (stat_secondaire_id)
+/*C42*/SET SCHEMA PUBLIC
+INSERT INTO PERSONNAGE VALUES(1,'sv',NULL,0,'sv',NULL,0,0,0,0)
+COMMIT
+DISCONNECT
+/*C41*/DISCONNECT
+/*C40*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C39*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C38*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C37*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C36*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C35*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C34*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C33*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C51*/SET SCHEMA PUBLIC
+alter table personnage_competences drop constraint UK_aeatw1411apo1v6rlyc5thxsb
+alter table personnage_competences add constraint UK_aeatw1411apo1v6rlyc5thxsb unique (competences_id)
+alter table personnage_dons drop constraint UK_n9v2d1pq6f2efss8f96oqbqn8
+alter table personnage_dons add constraint UK_n9v2d1pq6f2efss8f96oqbqn8 unique (dons_id)
+alter table personnage_equipement drop constraint UK_g4y048xhrvc0bw66vjrbh3rcn
+alter table personnage_equipement add constraint UK_g4y048xhrvc0bw66vjrbh3rcn unique (equipement_id)
+alter table personnage_stat_primaire drop constraint UK_a97bkwasgs6q4est0sps4k8pg
+alter table personnage_stat_primaire add constraint UK_a97bkwasgs6q4est0sps4k8pg unique (stat_primaire_id)
+alter table personnage_stat_secondaire drop constraint UK_hslq1yt7oiv45nrucx75r0y5o
+alter table personnage_stat_secondaire add constraint UK_hslq1yt7oiv45nrucx75r0y5o unique (stat_secondaire_id)
+/*C52*/SET SCHEMA PUBLIC
+INSERT INTO PERSONNAGE VALUES(2,'sdvsdv',NULL,0,'svdv',NULL,0,0,0,0)
+COMMIT
+DISCONNECT
+/*C51*/DISCONNECT
+/*C50*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C49*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C48*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C47*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C46*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C45*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C44*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C43*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C61*/SET SCHEMA PUBLIC
+alter table personnage_competences drop constraint UK_aeatw1411apo1v6rlyc5thxsb
+alter table personnage_competences add constraint UK_aeatw1411apo1v6rlyc5thxsb unique (competences_id)
+alter table personnage_dons drop constraint UK_n9v2d1pq6f2efss8f96oqbqn8
+alter table personnage_dons add constraint UK_n9v2d1pq6f2efss8f96oqbqn8 unique (dons_id)
+alter table personnage_equipement drop constraint UK_g4y048xhrvc0bw66vjrbh3rcn
+alter table personnage_equipement add constraint UK_g4y048xhrvc0bw66vjrbh3rcn unique (equipement_id)
+alter table personnage_stat_primaire drop constraint UK_a97bkwasgs6q4est0sps4k8pg
+alter table personnage_stat_primaire add constraint UK_a97bkwasgs6q4est0sps4k8pg unique (stat_primaire_id)
+alter table personnage_stat_secondaire drop constraint UK_hslq1yt7oiv45nrucx75r0y5o
+alter table personnage_stat_secondaire add constraint UK_hslq1yt7oiv45nrucx75r0y5o unique (stat_secondaire_id)
+/*C62*/SET SCHEMA PUBLIC
+INSERT INTO PERSONNAGE VALUES(3,'muche',NULL,0,'truc',NULL,0,0,0,0)
+COMMIT
+INSERT INTO PERSONNAGE VALUES(4,'bob',NULL,0,'gerard',NULL,0,0,0,0)
+COMMIT
+INSERT INTO PERSONNAGE VALUES(5,'lennon',NULL,0,'bob',NULL,0,0,0,0)
+COMMIT
