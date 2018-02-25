@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="/milligram.css" />
+<link rel="stylesheet" type="text/css" href="/interface.css" />
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"></meta>
+</head>
+
 <body>
 	<form action="#" th:action="@{sauvegardePerso}"
 		th:object="${Personnage}" method="post">
@@ -40,13 +45,13 @@
 					<tr>
 						<td class="caracPrinc"><input name="physique" type="number"
 							required="true" placeholder="50" />
-						<p>%</p></td>
+							<p>%</p></td>
 						<td class="caracPrinc"><input name="social" type="number"
 							required="true" placeholder="50" />
-						<p>%</p></td>
+							<p>%</p></td>
 						<td class="caracPrinc"><input name="mental" type="number"
 							required="true" placeholder="50" />
-						<p>%</p></td>
+							<p>%</p></td>
 					</tr>
 				</tbody>
 			</table>

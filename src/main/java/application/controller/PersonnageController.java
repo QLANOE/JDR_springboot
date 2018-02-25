@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import application.form.PersonnageForm;
 import application.model.Personnage;
 import application.service.PersonnageService;
 
@@ -30,9 +31,10 @@ public class PersonnageController {
 	}
 
 	@PostMapping("/sauvegardePerso")
-	public String sauvegarderPersonnage(Model model, @ModelAttribute("Personnage") Personnage perso,
+	public String sauvegarderPersonnage(Model model, @ModelAttribute("Personnage") PersonnageForm persoForm,
 			BindingResult result) {
 
+		Personnage perso = persoForm.personnageFormToPersonnage();
 		personnageService.ajouterPersonnage(perso.getNom(), perso.getDescription());
 		return "redirect:/jdr/perso";
 	}

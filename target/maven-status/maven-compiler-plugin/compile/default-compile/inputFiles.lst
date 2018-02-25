@@ -1,17 +1,17 @@
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\model\Competence.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\model\Bonus.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\model\Personnage.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\service\PersonnageService.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\model\BonusObjet.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\metier\CreationPerso.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\model\Objet.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\controller\PersonnageController.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\repository\PersonnageRepository.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\model\De.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\model\Localisation.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\metier\GestionPersonnage.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\model\Don.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\model\ObjetCombat.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\App.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\model\Monstre.java
-C:\Users\Formation\Desktop\TP Q algo\jdr.aventure.v2\src\main\java\application\model\Posture.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\model\BonusObjet.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\model\Posture.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\model\Competence.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\controller\PersonnageController.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\repository\PersonnageRepository.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\model\Personnage.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\metier\CreationPerso.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\model\Bonus.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\AppJdr.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\model\De.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\model\Monstre.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\model\Don.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\metier\GestionPersonnage.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\model\Objet.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\model\Localisation.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\service\PersonnageService.java
+C:\Users\Quentin\Documents\GitHub\JDR_springboot\src\main\java\application\model\ObjetCombat.java
