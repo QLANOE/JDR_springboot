@@ -11,7 +11,7 @@ public class Competence {
 
 	@Id
 	@GeneratedValue
-	private Long Id;
+	private Long id;
 
 	private String nom;
 	private int niveau;
@@ -42,15 +42,15 @@ public class Competence {
 	public void editerCompetence() {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Veuillez saisir le nom de la compétence");
+		System.out.println("Veuillez saisir le nom de la compï¿½tence");
 		nom = sc.nextLine();
-		System.out.println("Veuillez saisir la valeur de la compétence");
+		System.out.println("Veuillez saisir la valeur de la compï¿½tence");
 		niveau = sc.nextInt();
 	}
 
 	@Override
 	public String toString() {
-		return this.nom + " est à " + this.niveau + "%.";
+		return this.nom + " est ï¿½ " + this.niveau + "%.";
 	}
 
 }

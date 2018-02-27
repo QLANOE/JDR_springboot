@@ -14,7 +14,7 @@ public class Personnage {
 
 	@Id
 	@GeneratedValue
-	private Long Id;
+	private Long id;
 
 	private String nom;
 	private int niveau;
@@ -163,7 +163,7 @@ public class Personnage {
 		return "Le nom du personnage est " + this.nom + "\n son niveau est de " + this.niveau
 				+ "\n sa description est :\n" + this.description + "\n ses statistiques primaire sont:"
 				+ competenceToString(this.statPrimaire) + "\n ses statistiques secondaires sont: "
-				+ competenceToString(this.statSecondaire) + "\n ses compétences sont: "
+				+ competenceToString(this.statSecondaire) + "\n ses compï¿½tences sont: "
 				+ competenceToString(this.competences) + "\n sa posture de base est la " + this.postureBase.toString()
 				+ "\n il parle le " + this.langue + "\n ses points de vie sont de " + this.vieMax + " PV et il a "
 				+ this.psyMax + " points de psy";

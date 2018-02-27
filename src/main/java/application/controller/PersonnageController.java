@@ -25,15 +25,13 @@ public class PersonnageController {
 	@PostMapping
 	public Personnage save(@RequestBody Personnage user) {
 		Personnage savedUser;
-		savedUser = personnageService.ajouterPersonnage(user.getNom(), user.getDescription());
-		return savedUser;
+		return personnageService.ajouterPersonnage(user.getNom(), user.getDescription());
 
 	}
 
 	@GetMapping
 	public List<Personnage> listerPersonnage() {
-		List<Personnage> savedUsers = personnageService.listerPerso();
-		return savedUsers;
+		return personnageService.listerPerso();
 
 	}
 
@@ -50,8 +48,7 @@ public class PersonnageController {
 	@RequestMapping("/login/{login}")
 	public Personnage afficherUserParLogin(@PathVariable(value = "login") String nom) {
 
-		Personnage savedUser = personnageService.chercherPersonnageParNom(nom);
-		return savedUser;
+		return personnageService.chercherPersonnageParNom(nom);
 	}
 
 	@RequestMapping("/supprId/{supprId}")
@@ -63,8 +60,7 @@ public class PersonnageController {
 	@GetMapping("/{Id}")
 	public Personnage modifierUser(@RequestBody Personnage user, @PathVariable(value = "Id") Long id) {
 
-		Personnage savedUser = personnageService.modifierPersonnage(user.getNom(), user.getDescription(), id);
-		return savedUser;
+		return personnageService.modifierPersonnage(user.getNom(), user.getDescription(), id);
 	}
 
 }

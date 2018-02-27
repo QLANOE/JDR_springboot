@@ -1,10 +1,16 @@
 package application.model;
 
+import java.util.Random;
+
 public class De {
 
 	private int nbFaces;
 
 	public De() {
+	}
+
+	public De(int nbFaces) {
+		this.nbFaces = nbFaces;
 	}
 
 	public int getNbFaces() {
@@ -17,8 +23,8 @@ public class De {
 
 	public int jetDe() {
 
-		int jet = 0;
-		jet = (int) Math.floor(Math.random() * nbFaces + 1);
+		Random r = new Random();
+		int jet = r.nextInt(nbFaces - 1) + 1;
 
 		return jet;
 	}
