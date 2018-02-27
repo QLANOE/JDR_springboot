@@ -19,7 +19,7 @@ public class CreationPerso {
 			sommeStat = personnage.getStatPrimaire().get(0).getNiveau()
 					+ personnage.getStatPrimaire().get(1).getNiveau() + personnage.getStatPrimaire().get(2).getNiveau();
 			if (sommeStat != 170) {
-				System.out.println("La somme des valeurs des statistiques primaires doit être égal à 170.");
+				System.out.println("La somme des valeurs des statistiques primaires doit ï¿½tre ï¿½gal ï¿½ 170.");
 			}
 
 		} while (sommeStat != 170);
@@ -57,13 +57,13 @@ public class CreationPerso {
 
 		ArrayList<Competence> statSecondaires = new ArrayList<>();
 		Competence force = new Competence("Force");
-		Competence agilite = new Competence("Agilité");
+		Competence agilite = new Competence("Agilitï¿½");
 		Competence endurance = new Competence("Endurance");
 		Competence charisme = new Competence("Charisme");
 		Competence apparence = new Competence("Apparence");
 		Competence truc = new Competence("Truc");
 		Competence intelligence = new Competence("Intelligence");
-		Competence volonte = new Competence("Volonté");
+		Competence volonte = new Competence("Volontï¿½");
 		Competence sagesse = new Competence("Sagesse");
 
 		statSecondaires.add(force);
@@ -129,9 +129,9 @@ public class CreationPerso {
 
 		int[] sommeStatSecondaire = new int[3];
 		for (int i = 0; i < personnage.getStatPrimaire().size(); i++) {
-			int calcul;
+			Integer calcul;
 			calcul = (int) Math.floor(personnage.getStatPrimaire().get(i).getNiveau() / 10);
-			calcul = (int) (calcul + Math.floor(calcul / 2));
+			calcul = (int) (calcul.doubleValue() + Math.floor(calcul / 2));
 			sommeStatSecondaire[i] = calcul;
 
 		}
@@ -154,7 +154,7 @@ public class CreationPerso {
 			}
 			if (sommeStat != 60) {
 				bienrempli = false;
-				System.out.println("La somme des compétences doit être égale à 60.");
+				System.out.println("La somme des compï¿½tences doit ï¿½tre ï¿½gale ï¿½ 60.");
 				competences.removeAll(competences);
 			} else {
 				bienrempli = true;
@@ -198,7 +198,7 @@ public class CreationPerso {
 		while ((personnage.getVieMax() + personnage.getPsyMax()) != 10)
 			saisirVieEtPsy(personnage, sc);
 		if ((personnage.getVieMax() + personnage.getPsyMax()) != 10) {
-			System.out.println("La somme de la vie et de la psy n'est pas égale a 10.");
+			System.out.println("La somme de la vie et de la psy n'est pas ï¿½gale a 10.");
 		}
 	}
 
@@ -222,7 +222,7 @@ public class CreationPerso {
 
 	public void choixPosture(Personnage personnage, Scanner sc) {
 		System.out.println(
-				"Veuillez choisir la posture de base de votre personnage \n 1-Posture offensive\n 2-Posture Défensive\n 3-Posture de focus");
+				"Veuillez choisir la posture de base de votre personnage \n 1-Posture offensive\n 2-Posture Dï¿½fensive\n 3-Posture de focus");
 		boolean saisieBonne = false;
 		while (saisieBonne == false) {
 			saisieBonne = true;
@@ -240,7 +240,7 @@ public class CreationPerso {
 			default:
 				System.out.println("Vous n'avez pas saisi un chiffre valide");
 				System.out.println(
-						"Veuillez choisir la posture de base de votre personnage \n 1-Posture offensive\n 2-Posture Défensive\n 3-Posture de focus");
+						"Veuillez choisir la posture de base de votre personnage \n 1-Posture offensive\n 2-Posture Dï¿½fensive\n 3-Posture de focus");
 			}
 		}
 	}
@@ -259,7 +259,7 @@ public class CreationPerso {
 			int cout = sc.nextInt();
 			sc.nextLine();
 			personnage.getDons().add(new Don(nom, description, cout));
-			System.out.println("voulez vous créer un nouveau don? Y/N");
+			System.out.println("voulez vous crï¿½er un nouveau don? Y/N");
 			y = sc.nextLine();
 		} while (y.equals("y"));
 
