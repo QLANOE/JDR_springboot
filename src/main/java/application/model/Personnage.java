@@ -14,7 +14,7 @@ public class Personnage {
 
 	@Id
 	@GeneratedValue
-	private Long id;
+	private Long Id;
 
 	private String nom;
 	private int niveau;
@@ -147,6 +147,14 @@ public class Personnage {
 
 	public void setDons(List<Don> dons) {
 		this.dons = dons;
+	}
+
+	public Long getId() {
+		return Id;
+	}
+
+	public void setId(Long id) {
+		Id = id;
 	}
 
 	public String competenceToString(List<Competence> competences) {
