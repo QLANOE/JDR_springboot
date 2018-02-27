@@ -25,7 +25,29 @@ public class PersonnageService {
 		perso.setNom(nom);
 		perso.setDescription(description);
 		personnageRepository.save(perso);
-		System.out.println("perso enregistré");
+		System.out.println("perso enregistrï¿½");
+
+		return perso;
+	}
+
+	public Personnage chercherPersonnage(Long id) {
+		return personnageRepository.findOne(id);
+	}
+
+	public Personnage chercherPersonnageParNom(String nom) {
+		return personnageRepository.findPersonnageByNom(nom);
+	}
+
+	public void supprimmerPersonnage(Long id) {
+		personnageRepository.delete(id);
+	}
+
+	public Personnage modifierPersonnage(String nom, String description, Long id) {
+
+		Personnage perso = chercherPersonnage(id);
+		perso.setNom(nom);
+		perso.setDescription(description);
+		personnageRepository.save(perso);
 
 		return perso;
 	}
