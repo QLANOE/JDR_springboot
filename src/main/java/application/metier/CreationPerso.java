@@ -129,9 +129,8 @@ public class CreationPerso {
 
 		int[] sommeStatSecondaire = new int[3];
 		for (int i = 0; i < personnage.getStatPrimaire().size(); i++) {
-			Integer calcul;
-			calcul = (int) Math.floor(personnage.getStatPrimaire().get(i).getNiveau() / 10);
-			calcul = (int) (calcul.doubleValue() + Math.floor(calcul / 2));
+			Integer calcul = (int) (personnage.getStatPrimaire().get(i).getNiveau() / 10);
+			calcul = (int) (calcul + Math.floor(calcul.doubleValue() / 2));
 			sommeStatSecondaire[i] = calcul;
 
 		}
@@ -155,7 +154,7 @@ public class CreationPerso {
 			if (sommeStat != 60) {
 				bienrempli = false;
 				System.out.println("La somme des comp�tences doit �tre �gale � 60.");
-				competences.removeAll(competences);
+				competences.clear();
 			} else {
 				bienrempli = true;
 			}
