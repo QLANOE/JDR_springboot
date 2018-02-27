@@ -129,7 +129,7 @@ public class CreationPerso {
 
 		int[] sommeStatSecondaire = new int[3];
 		for (int i = 0; i < personnage.getStatPrimaire().size(); i++) {
-			Integer calcul = (int) (personnage.getStatPrimaire().get(i).getNiveau() / 10);
+			Integer calcul = (personnage.getStatPrimaire().get(i).getNiveau() / 10);
 			calcul = (int) (calcul + Math.floor(calcul.doubleValue() / 2));
 			sommeStatSecondaire[i] = calcul;
 

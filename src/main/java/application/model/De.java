@@ -24,9 +24,8 @@ public class De {
 	public int jetDe() {
 
 		Random r = new Random();
-		int jet = r.nextInt(nbFaces - 1) + 1;
+		return r.nextInt(nbFaces - 1) + 1;
 
-		return jet;
 	}
 
 }

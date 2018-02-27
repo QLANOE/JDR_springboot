@@ -24,7 +24,6 @@ public class PersonnageController {
 
 	@PostMapping
 	public Personnage save(@RequestBody Personnage user) {
-		Personnage savedUser;
 		return personnageService.ajouterPersonnage(user.getNom(), user.getDescription());
 
 	}
